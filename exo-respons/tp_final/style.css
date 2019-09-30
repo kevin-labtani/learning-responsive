@@ -258,8 +258,21 @@ footer h1 {
 
 /* media queries */
 @media (min-width: 370px) {
-
 }
 @media (min-width: 768px) {
-  
+  section {
+    flex-direction: column;
+  }
+
+  aside {
+    text-align: center;
+    max-height: 20vh;
+  }
+
+  aside > img {
+    display: none;
+  }
+  #photo_zozor {
+    display: none;
+  }
 }
