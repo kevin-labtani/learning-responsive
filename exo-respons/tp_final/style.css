@@ -257,22 +257,59 @@ footer h1 {
 }
 
 /* media queries */
-@media (min-width: 370px) {
-}
-@media (min-width: 768px) {
+
+@media only screen and (max-width: 1100px) {
+  #bloc_page {
+    width: 95%;
+  }
   section {
     flex-direction: column;
   }
 
+  article {
+    margin-right: 0;
+  }
+
   aside {
     text-align: center;
-    max-height: 20vh;
+    font-size: 0.8rem;
+  }
+
+  aside > * {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   aside > img {
     display: none;
   }
+
   #photo_zozor {
     display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    font-size: 150%;
+  }
+
+  footer div {
+    border-bottom: 1px solid #181818;
+  }
+
+  footer div:last-child {
+    border-bottom: none;
+  }
+
+  #tweet,
+  #mes_photos,
+  #mes_amis {
+    width: 100%;
+  }
+
+  #listes_amis {
+    text-align: left;
+    justify-content: space-around;
   }
 }
